@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>돌 밀기</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="game.js"></script>
+    </head>
+    <body>
+        <section>
+            <h1>돌 밀기</h1>
+            <p>돌을 밀어 목적지(회색 영역)으로 이동시키는 게임입니다.</p>
+            <p><b>조작법</b>: 방향키나 클릭으로 이동, Z로 Undo, X로 Redo, R로 재시작</p>
+            <p><b>※</b> 기존 NYPC처럼 즐기고 싶다면, 방향키를 제외한 모든 키를 사용하지 않고 플레이해 주세요.</p>
+            <br>
+            <textarea id="input">27 27
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+X....X.....X...X.....X.--XX
+X.**.....X.X.X...X.....--.X
+X.**....X..X..XXX.X.......X
+XXXXX...X.X..X....X..X.XX.X
+X....X..X..X...XX.X..X....X
+X.X.X...X...XXX...X..XXXXXX
+X........XX.....XXX.......X
+XX.......X.XXX.X..........X
+X....XXXX.....X..X...X...XX
+X...X.....XXX..X.....XX...X
+XX...X...X...X..X.XXXX...XX
+X..........X..X..X........X
+X.......XXX.X.XX.X........X
+XXXXXX..X.....XX..X...X.X.X
+X....X..X.XXXX.X..X..XX...X
+X.X.X...X.......X.X...XXXXX
+X........XXXXX....X.......X
+XX.......X...XXXXX........X
+X....XX.X..X.....X.X.X...XX
+X....X.X..X.XXXX.X.X.XX...X
+X...X...X........X....X...X
+XX.......X.......XXXXX....X
+X...........X.X..........XX
+X............X............X
+X..X.........X........X..OX
+XXXXXXXXXXXXXXXXXXXXXXXXXXX</textarea>
+            <button id="init">시작!</button>
+        </section>
+        <section>
+            <div id="game"></div>
+            <div style="margin-top: 32px;">
+                <div>이동 기록: <button id="copy">복사</button></div>
+                <textarea id="command"></textarea>
+            </div>
+        </section>
+    </body>
+</html>

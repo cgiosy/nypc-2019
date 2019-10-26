@@ -1,0 +1,56 @@
+html {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+section {
+    display: block;
+    padding: 64px 0 64px 0;
+    border-bottom: 1px solid lightgray;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+#input {
+    width: 100%;
+    height: 256px;
+}
+#command {
+    width: 100%;
+    height: 256px;
+}
+#game {
+    display: inline-block;
+    border: 1px solid black;
+}
+.line {
+    height: 32px;
+    margin: 0;
+}
+.line > div {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+.wall {
+    background: royalblue;
+}
+.player {
+    border-radius: 50%;
+    background: green;
+}
+.stone {
+    background: black;
+}
+.win {
+    background: gray;
+}
+.empty {
+    background: white;
+}
+.empty:hover {
+    background: #e0e0e0;
+}
